@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/serverStateTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip" >
+    </TextView>
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+		
+        <Button
+            android:id="@+id/target"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#eead0e"
+            android:layout_weight="1"
+            android:layout_margin="10dip"
+            android:text="目标" />
+
+        <Button
+            android:id="@+id/load"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#9acd32"
+            android:layout_weight="1"
+            android:layout_margin="10dip"       
+            android:text="装载/卸载" />
+
+        <Button
+            android:id="@+id/keep"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#1874cd"
+            android:layout_weight="1"
+            android:layout_margin="10dip"
+            android:text="保持" />
+
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+		
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#eead0e"
+            android:layout_weight="1"
+            android:layout_margin="10dip"
+            android:text="归零" />
+
+        <Button
+            android:id="@+id/netWeight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#9acd32"
+            android:layout_weight="1"
+            android:layout_margin="10dip"       
+            android:text="毛重/净重" />
+
+        <Button
+            android:id="@+id/turn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:layout_weight="1"
+            android:layout_margin="10dip"
+            android:text="开/关" />
+
+    </LinearLayout>
+           
+    <EditText
+        android:id="@+id/serverEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_margin="5dip"
+        android:background="#aaa"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:gravity="top"
+        android:singleLine="false" >
+    </EditText>
+   
+<!--     <EditText
+        android:id="@+id/serverSendEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </EditText>
+
+    <Button
+        android:id="@+id/serverSendMsgBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="发送" >
+    </Button> -->
+
+</LinearLayout>
